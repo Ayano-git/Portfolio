@@ -1,0 +1,29 @@
+.App{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    .page{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .tags{
+            color: #ffd700;
+            opacity: 0.6;
+            font-size: 18px;
+            font-family: "La Belle Aurore";
+            &.bottom-tags, &.top-tags{
+                margin-left: 20px;
+            }
+        }
+        .container{
+            width: 100%;
+            will-change: contents;
+            opacity: 0;
+            margin: 0 auto;
+            z-index: 1;
+            transform-style: preserve-3d;
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+    }
+}
