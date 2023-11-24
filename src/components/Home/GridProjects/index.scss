@@ -1,3 +1,13 @@
-.projects-container{
-    background-color: red;
+.projects-container {
+  h2 {
+    text-align: center;
+  }
+  .projects-grid-container {
+    border: 2px #ffd700 solid;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
 }
