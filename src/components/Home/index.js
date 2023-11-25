@@ -4,6 +4,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import GridProjects from './GridProjects'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,6 +38,7 @@ const Home = () => {
   }, [])
 
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -66,6 +68,8 @@ const Home = () => {
       </div>
       <GridProjects />
     </div>
+    <Loader type='pacman'/>
+    </>
   )
 }
 
