@@ -70,34 +70,3 @@
   }
 }
 
-@keyframes fall-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-400px);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  70% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(-30px);
-  }
-  90% {
-    transform: translateY(0);
-  }
-  95% {
-    transform: translateY(-10px);
-  }
-  97% {
-    transform: translateY(0);
-  }
-  99% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
