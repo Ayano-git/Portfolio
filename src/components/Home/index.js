@@ -3,6 +3,7 @@ import './index.scss'
 import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
+import GridProjects from './GridProjects'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -44,7 +45,7 @@ const Home = () => {
           <br />
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _14`}>'m</span>
-          <img src={LogoTitle} alt="Anthony" />
+          <span className={`${letterClass} _15 lettrine`}>A</span>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -63,6 +64,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <GridProjects />
     </div>
   )
 }
