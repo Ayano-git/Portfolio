@@ -1,0 +1,14 @@
+.project-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
+}
