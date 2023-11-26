@@ -33,12 +33,13 @@
 
   @keyframes growAnimation {
     0% {
-      transform: scale(1); /* Échelle initiale à 1 (taille normale) */
+      transform: scale(0.8); /* Échelle initiale à 1 (taille normale) */
     }
     50% {
-      transform: scale(1.1); /* Échelle à 1.1 à mi-chemin de l'animation (grandit légèrement) */
+      transform: scale(1.05); /* Échelle à 1.1 à mi-chemin de l'animation (grandit légèrement) */
     }
     100% {
+      opacity: 1;
       transform: scale(1); /* Échelle de retour à 1 à la fin de l'animation */
     }
   }

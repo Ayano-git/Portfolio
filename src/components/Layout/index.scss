@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     .page{
-        margin: 40px;
+        margin: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -12,7 +12,7 @@
             font-size: 18px;
             font-family: "La Belle Aurore";
             &.bottom-tags, &.top-tags{
-                margin-left: 20px;
+                margin-left: 10px;
             }
         }
         .container{

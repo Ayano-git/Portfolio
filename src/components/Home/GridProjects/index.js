@@ -43,13 +43,14 @@ const GridProjects = () => {
     <div className='projects-container'>
       <h2>My projects</h2>
       <div className="projects-grid-container">
-        {gridProjectData.map((project) => (
+        {gridProjectData.map((project, index) => (
           <ProjectCard
             key={project.id}
             projectImageSrc={project.projectImageSrc}
             projectTitle={project.projectTitle}
             projectAlt={project.projectAlt}
             projectLink={project.projectLink}
+            index={index}
           />
         ))}
       </div>

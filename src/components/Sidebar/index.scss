@@ -16,13 +16,10 @@
 
     img {
       display: block;
-      margin: 8px auto;
-      width: 24px;
+      padding: 5px;
+      width: 100%;
       height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
+      border-radius: 17px;
     }
   }
   nav {
