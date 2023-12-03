@@ -1,0 +1,54 @@
+.project-page {
+  margin-left: 20px;
+  padding: 20px;
+  text-align: center;
+  h1 {
+    font-size: 42px;
+  }
+  .resume {
+    color: #fff;
+    font-size: 16px;
+  }
+  .tools-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+    .tool-tag {
+      padding: 0 10px;
+    }
+  }
+  .project-content-grid {
+    padding: 20px 0;
+    .content-bloc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      margin-top: 40px;
+
+      p {
+        color: #fff;
+        font-size: 16px;
+        align-self: center;
+      }
+      img {
+        width: 100%;
+        max-width: 550px;
+        margin: auto;
+      }
+    }
+  }
+  .project-gallery-container {
+    h2 {
+      font-size: 36px;
+    }
+    .project-gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

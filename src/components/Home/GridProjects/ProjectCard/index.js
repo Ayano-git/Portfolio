@@ -7,7 +7,7 @@ const ProjectCard = ({ projectImageSrc, projectTitle, projectAlt, projectLink, i
   const cardClassName = `project-card card-${index + 1}`;
   return (
     <div className="project-card-container">
-      <NavLink className={cardClassName} to={projectLink}>
+      <NavLink className={cardClassName} to={`/projects/${projectLink}`}>
         <img src={projectImageSrc} alt={projectAlt} />
         <h3>{projectTitle}</h3>
       </NavLink>
