@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Project from './components/Project';
+import GridProjects from './components/Home/GridProjects';
 
 function App() {
   return (
@@ -14,10 +15,8 @@ function App() {
         <Route index element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
-        <Route path='/portfolio' element={<About />}/>
-        <Route path='/mirium-mixtis' element={<About />}/>
-        <Route path='/wicked-shop' element={<About />}/>
-        <Route path='/grind-together' element={<About />}/>
+        <Route path="/projects" element={<GridProjects />} />
+        <Route path="/projects/:link" element={<Project />} />
       </Route>
       
     </Routes>

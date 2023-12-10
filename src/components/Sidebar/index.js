@@ -1,19 +1,17 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoAya from '../../assets/images/logoaya.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faFolderClosed } from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react'
-import { faGithub, faLinkedin, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={LogoS} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img src={LogoAya} alt="logo" />
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -28,6 +26,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="project-link"
+          to="/projects"
+        >
+          <FontAwesomeIcon icon={faFolderClosed} color="#4d4d4e" />
+        </NavLink>
 
         <NavLink
           exact="true"
@@ -37,27 +43,18 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+
       </nav>
       <ul>
         <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-            </a>
+          <a target="_blank" rel="noreferrer" href="/">
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
         </li>
         <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-            </a>
-        </li>
-        <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
-            </a>
-        </li>
-        <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faTiktok} color="#4d4d4e" />
-            </a>
+          <a target="_blank" rel="noreferrer" href="/">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
         </li>
       </ul>
     </div>

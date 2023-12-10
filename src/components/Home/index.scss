@@ -4,18 +4,19 @@
   grid-gap: 20px;
   .text-zone {
     align-self: center;
+    margin-left: 20px;
     h1 {
-      color: #fff;
-      font-size: 54px;
+      color: var(--secondary-color);
+      font-size: var(--h1-font-size);
       margin: 0;
-      font-family: 'Coolvetica';
+      font-family: var(--title-font-family);
       font-weight: 400;
       position: relative;
 
       &::before {
         content: '<h1>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
+        font-family: var(--text-font-family);
+        color: var(--primary-color);
         font-size: 18px;
         position: absolute;
         top: -10px;
@@ -24,8 +25,8 @@
       }
       &::after {
         content: '</h1>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
+        font-family: var(--text-font-family);
+        color: var(--primary-color);
         font-size: 18px;
         margin-left: 20px;
         opacity: 0.6;
@@ -33,37 +34,37 @@
       }
       .lettrine {
         animation: fall-in 2.25s linear forwards;
-        font-size: 70px;
+        font-size: 54px;
         line-height: 1;
         margin-left: 20px;
         height: auto;
         animation-delay: 1.4s;
       }
     }
-    h2 {
+    .intitule {
       color: #8d8d8d;
       margin-top: 20px;
       font-weight: 400;
-      font-size: 11px;
+      font-size: var(--text-font-size);
       font-family: sans-serif;
       letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
     }
     .flat-button {
-      color: #ffd700;
+      color: var(--primary-color);
       font-size: 13px;
       font-weight: 400;
       letter-spacing: 4px;
       font-family: sans-serif;
       text-decoration: none;
       padding: 10px 18px;
-      border: 1px solid #ffd700;
+      border: 1px solid var(--primary-color);
       margin-top: 25px;
       float: left;
       animation: fadeIn 1s 1.8s backwards;
       white-space: nowrap;
       &:hover {
-        background-color: #ffd700;
+        background-color: var(--primary-color);
         color: #333;
       }
     }

@@ -1,5 +1,5 @@
 .nav-bar {
-  background-color: #181818;
+  background-color: var(--primary-bg-color);
   width: 60px;
   height: 100vh;
   position: sticky;
@@ -16,13 +16,10 @@
 
     img {
       display: block;
-      margin: 8px auto;
-      width: 24px;
+      padding: 5px;
+      width: 100%;
       height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
+      border-radius: 17px;
     }
   }
   nav {
@@ -53,14 +50,14 @@
         background-color: #4d4d4e;
 
         svg {
-          color: #ffd700;
+          color: var(--primary-color);
         }
       }
     }
 
     a.active {
       svg {
-        color: #ffd700;
+        color: var(--primary-color);
       }
     }
   }
@@ -84,7 +81,7 @@
           background-color: #4d4d4e;
 
           svg {
-            color: #ffd700;
+            color: var(--primary-color);
           }
         }
       }
