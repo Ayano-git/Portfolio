@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './index.scss'
-import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import GridProjects from './GridProjects'
@@ -61,14 +60,13 @@ const Home = () => {
             idx={21}
           />
         </h1>
-        <h2>Frontend Developer</h2>
+        <p className='intitule'>Frontend Developer</p>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
       <GridProjects />
     </div>
-    <p>AAAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA AAAAAAAAAAAA </p>
     <Loader type='pacman'/>
     </>
   )

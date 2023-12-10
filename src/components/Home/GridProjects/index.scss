@@ -1,9 +1,10 @@
 .projects-container {
   h2 {
     text-align: center;
+    font-size: var(--h2-font-size);
   }
   .projects-grid-container {
-    border: 2px #ffd700 solid;
+    border: 2px var(--primary-color) solid;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

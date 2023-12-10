@@ -2,10 +2,10 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoAya from '../../assets/images/logoaya.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faFolderClosed } from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react'
-import { faGithub, faLinkedin, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
@@ -26,6 +26,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="project-link"
+          to="/projects"
+        >
+          <FontAwesomeIcon icon={faFolderClosed} color="#4d4d4e" />
+        </NavLink>
 
         <NavLink
           exact="true"
@@ -35,27 +43,18 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+
       </nav>
       <ul>
         <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-            </a>
+          <a target="_blank" rel="noreferrer" href="/">
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
         </li>
         <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-            </a>
-        </li>
-        <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
-            </a>
-        </li>
-        <li>
-            <a target='_blank' rel='noreferrer' href='#'>
-                <FontAwesomeIcon icon={faTiktok} color="#4d4d4e" />
-            </a>
+          <a target="_blank" rel="noreferrer" href="/">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
         </li>
       </ul>
     </div>

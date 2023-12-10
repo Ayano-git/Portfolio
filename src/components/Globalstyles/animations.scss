@@ -1,45 +1,76 @@
-@keyframes fall-in {
-    0% {
-      opacity: 0;
-      transform: translateY(-400px);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
-    70% {
-      transform: translateY(0);
-    }
-    80% {
-      transform: translateY(-30px);
-    }
-    90% {
-      transform: translateY(0);
-    }
-    95% {
-      transform: translateY(-10px);
-    }
-    97% {
-      transform: translateY(0);
-    }
-    99% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+.slide-in-from-right {
+  &.even-display {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
-  
+  &.odd-display {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+}
 
-  @keyframes growAnimation {
-    0% {
-      transform: scale(0.8); /* Échelle initiale à 1 (taille normale) */
-    }
-    50% {
-      transform: scale(1.05); /* Échelle à 1.1 à mi-chemin de l'animation (grandit légèrement) */
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1); /* Échelle de retour à 1 à la fin de l'animation */
-    }
+.slide-in-from-right.visible {
+  &.even-display,
+  &.odd-display {
+    opacity: 1;
+    transform: translateX(0);
   }
+}
+
+@keyframes fall-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-30px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-10px);
+  }
+  97% {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes growAnimation {
+  0% {
+    transform: scale(0.8); /* Échelle initiale à 1 (taille normale) */
+  }
+  50% {
+    transform: scale(
+      1.05
+    ); /* Échelle à 1.1 à mi-chemin de l'animation (grandit légèrement) */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Échelle de retour à 1 à la fin de l'animation */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

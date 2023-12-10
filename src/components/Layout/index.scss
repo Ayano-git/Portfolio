@@ -7,10 +7,10 @@
         flex-direction: column;
         justify-content: space-between;
         .tags{
-            color: #ffd700;
+            color: var(--primary-color);
             opacity: 0.6;
             font-size: 18px;
-            font-family: "La Belle Aurore";
+            font-family: var(--text-font-family);
             &.bottom-tags, &.top-tags{
                 margin-left: 10px;
             }
